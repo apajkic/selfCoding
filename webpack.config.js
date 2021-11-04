@@ -10,7 +10,7 @@ module.exports = {
     'app': './app.js'
   },
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "/public"),
     filename: "[name].js",
     libraryTarget: "umd",
     library: "app",
@@ -35,7 +35,7 @@ module.exports = {
   },
   devServer: {
     contentBase: __dirname,
-    publicPath: '/dist',
+    publicPath: '/public',
     compress: true,
     port: 4003,
   },
